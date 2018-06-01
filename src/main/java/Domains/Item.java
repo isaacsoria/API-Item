@@ -1,10 +1,12 @@
 package Domains;
 
 public class Item {
+
+    private String id;
     private String title;
     private String category_id;
     private String currency_id;
-    private int avalible_quantity;
+    private Integer avalible_quantity;
     private String buying_mode;
     private String listing_type_id;
     private String condition;
@@ -14,6 +16,14 @@ public class Item {
     private String[] pictures;
 
     public Item() {
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getTitle() {
@@ -40,11 +50,11 @@ public class Item {
         this.currency_id = currency_id;
     }
 
-    public int getAvalible_quantity() {
+    public Integer getAvalible_quantity() {
         return avalible_quantity;
     }
 
-    public void setAvalible_quantity(int avalible_quantity) {
+    public void setAvalible_quantity(Integer avalible_quantity) {
         this.avalible_quantity = avalible_quantity;
     }
 
